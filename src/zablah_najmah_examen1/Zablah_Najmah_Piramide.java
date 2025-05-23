@@ -77,7 +77,7 @@ public class Zablah_Najmah_Piramide {
                 System.out.println(" = "+sumaFila);
             }
         } else {
-            System.out.println("Opcion no valida. Por favor, seleccione una de las opciones presentes: ");
+            System.out.println("Opcion invalida. Por favor, seleccione una de las opciones presentes: ");
         }
             System.out.println();
         } while (opcion != 5);
