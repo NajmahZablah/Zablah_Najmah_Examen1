@@ -10,10 +10,6 @@ import java.util.*;
  * @author najma
  */
 public class Zablah_Najmah_Piramide {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner lea = new Scanner(System.in).useDelimiter("\n");
         
