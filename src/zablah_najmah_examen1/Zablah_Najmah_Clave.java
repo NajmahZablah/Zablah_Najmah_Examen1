@@ -16,6 +16,7 @@ public class Zablah_Najmah_Clave {
    
    int opcion;
     do {
+        //Menu Principal:
         System.out.println("\n=== Cifrado/Descifrado ===");
         System.out.println("1. Cifrar un mensaje");
         System.out.println("2. Descifrar un mensaje");
@@ -23,9 +24,11 @@ public class Zablah_Najmah_Clave {
         System.out.print("Por favor, seleccione una de las opciones: ");
         opcion = lea.nextInt();
         
+        //Variables tipo string:
         String mensajeProcesado;
         String mensajeOriginal;
         
+        //Procedimiento:
         if (opcion == 1) {
             System.out.print("Ingrese el mensaje a cifrar: ");
             mensajeOriginal = lea.next();

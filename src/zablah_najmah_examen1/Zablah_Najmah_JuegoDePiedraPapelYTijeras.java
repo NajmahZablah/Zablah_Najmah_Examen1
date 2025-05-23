@@ -18,7 +18,7 @@ public class Zablah_Najmah_JuegoDePiedraPapelYTijeras {
         //SistemaActivo:
         boolean seguirJugando = true;
         
-        //Bienvenida
+        //Bienvenida al usuario:
         System.out.println("\n===Bienvenido al Juego de Piedra, Papel o Tigera! ===");
         
         //Procedimiento:
@@ -37,32 +37,43 @@ public class Zablah_Najmah_JuegoDePiedraPapelYTijeras {
         int numeroAleatorio = random.nextInt(3);
         
         switch (numeroAleatorio) {
-            case 1:
+            case 0:
                 eleccionCompu = "Piedra";
                 break;
-            case 2: 
+            case 1: 
                 eleccionCompu = "Papel";
                 break;
-            case 3:
+            case 2:
                 eleccionCompu = "Tijeras";
                 break;
         }
         System.out.println("La computadora ha elegido: "+eleccionCompu);
         
+        
         if (eleccionUsuario.equalsIgnoreCase(eleccionCompu)) {
             System.out.println("Es un empate!");
-        } else if (
-                (eleccionUsuario.equalsIgnoreCase("Piedra") && eleccionUsuario.equalsIgnoreCase("Papel") && eleccionUsuario.equalsIgnoreCase("Tijeras"))
-                ) {
-            System.out.println("Felicidades! Ganaste la ronda!");
-        } else {
-            System.out.println("Lo siento! Perdiste la ronda!");
+        } else if (eleccionUsuario.equalsIgnoreCase("Piedra")) {
+            if (eleccionCompu.equalsIgnoreCase("Tijeras")) {
+                System.out.println("Ganaste la ronda! Felicidades!");
+            } else {
+                System.out.println("Perdiste la ronda! Mejor suerte la proxima!");
+            }
+        } else if (eleccionUsuario.equalsIgnoreCase("Papel")) {
+            if (eleccionCompu.equalsIgnoreCase("Piedra")) {
+                System.out.println("Ganaste la ronda! Felicidades!");
+            } else {
+                System.out.println("Perdiste la ronda! Mejor suerte la proxima!");
+            }
+        } else if (eleccionUsuario.equalsIgnoreCase("Tijeras")) {
+            if (eleccionCompu.equalsIgnoreCase("Papel")) {
+                System.out.println("Ganaste la ronda! Felicidades!");
+            } else {
+                System.out.println("Perdiste la ronda! Mejor suerte la proxima!");
+            }
         }
-        System.out.println();
-        
         String respuesta = "";
         do {
-        System.out.println("Deseas jugar una ronda? (si/no): ");
+        System.out.print("\nDeseas jugar una ronda? (si/no): ");
         respuesta = lea.next();
         
         if (!respuesta.equalsIgnoreCase("si") && !respuesta.equalsIgnoreCase("no")) {

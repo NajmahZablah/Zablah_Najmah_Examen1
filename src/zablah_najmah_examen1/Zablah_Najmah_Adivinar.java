@@ -15,14 +15,16 @@ public class Zablah_Najmah_Adivinar {
         Scanner lea= new Scanner(System.in).useDelimiter("\n");
         Random random = new Random();
         
+        //Variables tipo int:
         int numeroSecreto = random.nextInt(100);
         int numeroIngresado;
         int intentosMax = 10;
         int contadorIntentos = 0;
         
+        //Procedimiento:
         System.out.println("\n===Adivine un numero Secreto ===");
         while (contadorIntentos < intentosMax) {
-            System.out.println("Ingrese un numero del 1 al 100: ");
+            System.out.print("Ingrese un numero del 1 al 100: ");
             numeroIngresado = lea.nextInt();
             contadorIntentos++;
             

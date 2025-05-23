@@ -19,7 +19,7 @@ public class Zablah_Najmah_Piramide {
         
         int opcion = 0;
         do {
-        //Menu principal
+        //Menu principal:
         System.out.println("\n=== Menu Principal ===");
         System.out.println("1. Suma");
         System.out.println("2. Resta");
@@ -29,15 +29,18 @@ public class Zablah_Najmah_Piramide {
         System.out.print("Seleccione una de las opciones: ");
         opcion = lea.nextByte();
         
+        //Variables tipo int:
         int numero1 = 0;
         int numero2 = 0;
         
+        //Datos desde el teclado:
         if (opcion >= 1 && opcion <= 4) {
         System.out.print("Por favor, ingrese un primer numero: ");
         numero1 = lea.nextInt();
         System.out.print("Por favor, ingrese un segundo numero: ");
         numero2 = lea.nextInt();
         
+        //Procedimiento:
         }
         if (opcion == 1) {
             int suma = numero1+numero2;
